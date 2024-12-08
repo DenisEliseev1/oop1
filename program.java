@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Реализовать, с учетом ооп подхода, приложение. Для проведения исследований с генеалогическим древом.
  * 
@@ -8,6 +11,6 @@
 public class program {
 
     public static void main(String[] args) {
-        
+        List <Person> personList = new ArrayList<>();
     }
 }

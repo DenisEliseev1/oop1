@@ -1,4 +1,4 @@
-public class person {
+public class Person {
     private String name;
     private String surname;
     private String nameFather;
@@ -54,7 +54,7 @@ public class person {
      * @param nameMother
      * @param ages
      */
-    public person(String name, String surname, String nameFather, String nameMother, int ages) {
+    public Person(String name, String surname, String nameFather, String nameMother, int ages) {
         this.name = name;
         this.surname = surname;
         this.nameFather = nameFather;
