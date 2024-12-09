@@ -54,13 +54,7 @@ public class Person {
      * @param nameMother
      * @param ages
      */
-    public Person(String name, String surname, String nameFather, String nameMother, int ages) {
-        this.name = name;
-        this.surname = surname;
-        this.nameFather = nameFather;
-        this.nameMother = nameMother;
-        this.ages = ages;
-    }
+
     public Person() {
         this.name = name;
         this.surname = surname;

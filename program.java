@@ -12,11 +12,7 @@ public class program {
 
     public static void main(String[] args) {
         List <Person> persons = new ArrayList<>();
-        Person pers1 = new Person();
-        for (int i = 0; i < 10; i++) {
-            pers1 = GenerateFamily.Person();
-            persons.add(pers1);
-        }
+        persons = GenerateFamily.personList();
         for (Person person : persons) {
             System.out.println(person);
         }

@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class GenerateFamily {
@@ -22,6 +24,16 @@ public class GenerateFamily {
         personArray.setNameFather (arrName [rand.nextInt(2)]);
         personArray.setNameMother  (arrName [rand.nextInt(2)+3]);
         return personArray;
+    }
+
+    public static ArrayList <Person> personList () {
+        ArrayList <Person> persons = new ArrayList<>();
+        Person pers1 = new Person();
+        for (int i = 0; i < 10; i++) {
+            pers1 = GenerateFamily.Person();
+            persons.add(pers1);
+        }
+        return persons;
     }
     
 }
