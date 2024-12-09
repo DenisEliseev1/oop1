@@ -1,2 +1,0 @@
-Предок: - [name=Мария, surname=Иванов(а), nameFather=Иван, nameMother=Елена, ages=3]
-Потомки:

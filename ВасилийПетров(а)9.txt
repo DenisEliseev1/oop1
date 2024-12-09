@@ -1,2 +1,0 @@
-Предок: - [name=Василий, surname=Петров(а), nameFather=Иван, nameMother=Елена, ages=9]
-Потомки:
