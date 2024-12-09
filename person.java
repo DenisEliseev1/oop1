@@ -61,6 +61,24 @@ public class Person {
         this.nameMother = nameMother;
         this.ages = ages;
     }
+    public Person() {
+        this.name = name;
+        this.surname = surname;
+        this.nameFather = nameFather;
+        this.nameMother = nameMother;
+        this.ages = ages;
+    }
+
+    @Override
+    public String toString() {
+        return "Person [name=" + name + ", surname=" + surname + ", nameFather=" + nameFather + ", nameMother="
+                + nameMother + ", ages=" + ages + "]";
+    }
+   
+
+
+
+    
 
     
     

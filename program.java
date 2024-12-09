@@ -11,6 +11,17 @@ import java.util.List;
 public class program {
 
     public static void main(String[] args) {
-        List <Person> personList = new ArrayList<>();
+        List <Person> persons = new ArrayList<>();
+        Person pers1 = new Person();
+        for (int i = 0; i < 10; i++) {
+            pers1 = GenerateFamily.Person();
+            persons.add(pers1);
+        }
+        for (Person person : persons) {
+            System.out.println(person);
+        }
+        
     }
+        
+
 }
