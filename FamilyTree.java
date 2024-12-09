@@ -1,12 +1,30 @@
+import java.io.File;
+import java.io.FileWriter;
+import java.util.ArrayList;
+
 public class FamilyTree {
 
-    public boolean check (Person pers1, Person pers2) {
-        boolean ch = false;
-        if ((pers1.getSurname () == pers2.getSurname()) && (pers1.getName()== pers2.getNameFather()) 
-        && ((pers1.getAges() - pers2.getAges()) > 20)) {
-            ch = true;
+       public static void StartCheckChildren (ArrayList<Person> pers) throws Exception {
+        int ages;
+        String name;
+        String nameF;
+        String nameM;
+        String sName;
+        for (Person person : pers) {
+            name = person.getName();
+            ages = person.getAges();
+            sName = person.getSurname();
+            FileWriter file = new FileWriter (name+sName+ages+".txt");
+            file.write ("Родитель: " + person + "\n" + "Дети:");
+            file.append('\n');
+            for (Person person2 : pers) {
+                if ((sName == person2.getSurname())&&((name == person2.getNameFather())||(name == person2.getNameMother())) 
+                && ((ages - person2.getAges()) >= 18)){
+                    file.append ("-" + person2);
+                }
+
+            }
+            file.close();
         }
-        return ch;
     }
-    
 }

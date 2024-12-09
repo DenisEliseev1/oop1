@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 public class GenerateFamily {
@@ -20,7 +19,7 @@ public class GenerateFamily {
         Person personArray = new Person();
         personArray.setName(arrName [rand.nextInt(5)]);
         personArray.setSurname(arrSName [rand.nextInt(2)]);
-        personArray.setAges (rand.nextInt(40)+20);
+        personArray.setAges (rand.nextInt(50));
         personArray.setNameFather (arrName [rand.nextInt(2)]);
         personArray.setNameMother  (arrName [rand.nextInt(2)+3]);
         return personArray;

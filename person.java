@@ -65,7 +65,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person [name=" + name + ", surname=" + surname + ", nameFather=" + nameFather + ", nameMother="
+        return "- [name=" + name + ", surname=" + surname + ", nameFather=" + nameFather + ", nameMother="
                 + nameMother + ", ages=" + ages + "]";
     }
    

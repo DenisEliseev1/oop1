@@ -10,13 +10,13 @@ import java.util.List;
 
 public class program {
 
-    public static void main(String[] args) {
-        List <Person> persons = new ArrayList<>();
+    public static void main(String[] args) throws Exception {
+        ArrayList <Person> persons = new ArrayList<>();
         persons = GenerateFamily.personList();
         for (Person person : persons) {
             System.out.println(person);
         }
-        
+    FamilyTree.StartCheckChildren(persons);   
     }
         
 
