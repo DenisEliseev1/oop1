@@ -1,0 +1,2 @@
+Предок: - [name=Мария, surname=Петров(а), nameFather=Петр, nameMother=Елена, ages=24]
+Потомки:
